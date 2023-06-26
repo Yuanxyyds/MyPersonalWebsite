@@ -29,12 +29,17 @@ a {
 .leftrow-container {
     height: 100vh;
     width: 25vw;
+    min-width: 250px;
+    min-height: 800px;
 }
 
 .rightrow-container {
     height: 100vh;
     width: 75vw;
+    min-width: 750px;
+    min-height: 800px;
 }
+
 
 
 @font-face {
