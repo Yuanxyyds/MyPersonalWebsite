@@ -19,28 +19,6 @@ a {
     box-sizing: border-box;
 }
 
-.content-container {
-    background-image: url('../../public/home_background.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-}
-
-.leftrow-container {
-    height: 100vh;
-    width: 25vw;
-    min-width: 250px;
-    min-height: 800px;
-}
-
-.rightrow-container {
-    height: 100vh;
-    width: 75vw;
-    min-width: 750px;
-    min-height: 800px;
-}
-
-
 
 @font-face {
     font-family: "burtons";

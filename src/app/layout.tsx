@@ -1,5 +1,6 @@
 import './globals.css'
-import './container.css'
+import './css/container.css'
+import './css/size.css'
 import { Inter } from 'next/font/google'
 import React from "react";
 
