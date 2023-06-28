@@ -43,7 +43,7 @@ export default function SummaryContent(){
       </div>
 
       <p className='text-md mb-2 mt-4 leading-8 text-gray-800'>
-        An ambitious and dedicated third-year undergraduate student at the University of Toronto, with GPA 3.9/4.0. Currently working as a Cloud and Mobile App Co-op developer at Johnson Controls and serving as President of the University of Toronto Tutoring Club. I am actively contributing to a diverse range of 10+ projects, software business startups, over 1000+ contribution on github.
+        An ambitious and dedicated third-year undergraduate student at the University of Toronto, double specialist in Computer Science & Data Science with GPA 3.9/4.0. Currently working as a Cloud and Mobile App Co-op developer at Johnson Controls and serving as President of the University of Toronto Tutoring Club. I am actively contributing to a diverse range of 10+ projects, software business startups, over 1000+ contribution on github.
       </p>
     </div>
 

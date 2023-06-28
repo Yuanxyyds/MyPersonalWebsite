@@ -1,0 +1,68 @@
+.container-stack {
+  position: relative;
+}
+
+.skill-image-tl {
+  position: absolute;
+  background-image: url('../../../public/skill.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 15vh;
+  width: 28vw;
+  min-width: 280px;
+  min-height: 150px;
+  top: max(7vh, 70px);
+  left: 0;
+}
+
+.skill-image-br {
+  position: absolute;
+  background-image: url('../../../public/click_me.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 25vh;
+  width: 30vw;
+  min-width: 300px;
+  min-height: 250px;
+  top: max(70vh, 700px);
+  right: 0;
+}
+
+.box-center {
+  padding-top: max(16vh, 160px);
+  padding-bottom: max(16vh, 160px);
+  text-align: center;
+}
+
+.rectangle {
+  position: absolute;
+  width: 30vw;
+  min-width: 300px;
+  border: 3px solid grey;
+}
+
+.rectangle:nth-child(1) {
+  top: 0;
+  right:0;
+  height: 35vh;
+  min-height: 350px;
+  background-color: #d9e2e4;
+}
+
+.rectangle:nth-child(2) {
+  top: max(55vh, 550px);
+  left: 0;
+  height: 35vh;
+  min-height: 350px;
+  background-color: #b2c5c9; 
+}
+
+.rectangle:nth-child(3) {
+  top: max(26vh, 260px);
+  left: max(15vw, 150px);
+  background: linear-gradient(#d9e2e4, #b2c5c9);
+  height: 40vh;
+  min-height: 400px;
+  width: 40vw;
+  min-width: 400px;
+}

@@ -1,6 +1,7 @@
 "use client";
 import { AiFillGithub, AiFillLinkedin, } from 'react-icons/ai';
 import { useState } from 'react';
+import SkillContent from './pages/skill';
 import SummaryContent from './pages/summary';
 
 
@@ -14,11 +15,10 @@ export default function Home() {
   const RenderContent = () => {
     if (activeTab === 'summary') {
       return <SummaryContent />;
+    } else if (activeTab === 'skill') {
+      return <SkillContent/>;
     } else {
-      return <div className='text-center p-10'>
-        <h2 className='text-3xl py-2'>Tab 1 Content</h2>
-        <p>Content for Tab 1 goes here...</p>
-      </div>;
+      return ;
     }
   }
 
