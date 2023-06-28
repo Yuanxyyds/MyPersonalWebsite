@@ -93,7 +93,6 @@ const handleTabChange = (tab: string) => {
             <div className='container-stack'>
                 <button className="rectangle bg-cyan-300 rounded-3xl">
                     <p className='box-center text-3xl text-black font-queensides font-bold mb-2'  onClick={() => handleTabChange('ds')}>Data Scientist Skills</p>
-                
                 </button>
                 <button className="rectangle rounded-3xl">
                         <p className='box-center text-3xl text-black font-queensides font-bold mb-2'  onClick={() => handleTabChange('cs')}>Software Developing Skills</p>
@@ -125,7 +124,7 @@ const handleTabChange = (tab: string) => {
                 <div className="skill-image-br"></div>
             </div>
         </div>
-    );Í
+    );
 
   }
 
