@@ -25,21 +25,21 @@ a {
     src: url('/Burtons.otf');
 }
 
+
 @font-face {
-    font-family: "queensides";
-    src: url('/Queensides.ttf') 
-    format('truetype');
+    font-family: "poppin";
+    src: url('/Poppins-Regular.ttf') format('truetype');
     font-weight: normal;
 }
 
 @font-face {
-    font-family: 'queensides';
-    src: url('/QueensidesLight.ttf') format('truetype');
+    font-family: 'poppin';
+    src: url('/Poppins-Light.ttf') format('truetype');
     font-weight: 300;
-  }
-  
-  @font-face {
-    font-family: 'queensides';
-    src: url('/QueensidesMedium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'poppin';
+    src: url('/Poppins-SemiBold.ttf') format('truetype');
     font-weight: 500;
-  }
+}
