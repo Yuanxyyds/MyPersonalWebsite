@@ -10,6 +10,7 @@ module.exports = {
       fontFamily: {
         burtons: "burtons",
         queensides: "queensides",
+        poppin: "poppin"
       }
     },
   },
