@@ -239,7 +239,7 @@ export default function SkillContent() {
                                 <h1 className='text-xl font-semibold text-black mb-4 mr-4'> Personal Intiative </h1>
                                 <YellowStars number={5} />
                             </div>
-                            <p className=' text-gray-600'> I am always ready for a challenge and thrive in dynamic environments that require quick adaptation. With my multidisciplinary expertise, I can bring a versatile skill set to tackle diverse tasks and projects. Whether it's learning new technologies, exploring unfamiliar domains, or collaborating across disciplines, I am prepared to take on any challenge and deliver effective results. </p>
+                            <p className=' text-gray-600'> I am always ready for a challenge and thrive in dynamic environments that require quick adaptation. With my multidisciplinary expertise, I can bring a versatile skill set to tackle diverse tasks and projects. Whether it is learning new technologies, exploring unfamiliar domains, or collaborating across disciplines, I am prepared to take on any challenge and deliver effective results. </p>
                         </div>
                         {/* Personal Intiative Skill */}
                         <div className='rightrow-skill-container'>
