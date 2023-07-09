@@ -20,7 +20,7 @@ export default function SkillContent() {
                     <button className='ml-4 text-gray-600' onClick={() => handleTabChange('ds')}> Data Scientist Skills</button>
                     <button className='ml-4 text-gray-600' onClick={() => handleTabChange('other')}> Business & Management Skills</button>
                 </nav>
-                <section className='m-10'>
+                <section className=' m-20'>
                     <div className='flex font-poppin'>
                         {/* Mobile App */}
                         <div className='leftrow-skill-container mr-4'>
@@ -146,7 +146,7 @@ export default function SkillContent() {
                     <button className='ml-4 bg-black text-white px-4 py-2 rounded-b-lg' onClick={() => handleTabChange('ds')}> Data Scientist Skills</button>
                     <button className='ml-4 text-gray-600' onClick={() => handleTabChange('other')}> Business & Management Skills</button>
                 </nav>
-                <section className='m-10'>
+                <section className='m-20'>
                     <div className='flex font-poppin'>
                         {/* Data Scientist */}
                         <div className='leftrow-skill-container mr-4'>
@@ -231,7 +231,7 @@ export default function SkillContent() {
                     <button className='ml-4 text-gray-600' onClick={() => handleTabChange('ds')}> Data Scientist Skills</button>
                     <button className='ml-4 bg-black text-white px-4 py-2 rounded-b-lg' onClick={() => handleTabChange('other')}> Business & Management Skills</button>
                 </nav>
-                <section className='m-10'>
+                <section className='m-20'>
                     <div className='flex font-poppin'>
                         {/* Personal Intiative */}
                         <div className='leftrow-skill-container mr-4'>
