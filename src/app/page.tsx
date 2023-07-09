@@ -147,7 +147,6 @@ export default function Home() {
               onClick={() => handleTabChange('nlp')}
             > NLPS
             </button>
-
             <button
               className={`px-4 py-2 rounded-b-md text-sm  ${activeTab === 'dsothers' ? 'bg-blue-500' : 'bg-gray-100'
                 }`}
@@ -155,18 +154,12 @@ export default function Home() {
             > Other Data Science Projects
             </button>
           </div>
-
         </section>
-
         {/* Second Row */}
         <section className='rightrow-container'>
           <RenderContent />
         </section>
-
       </section>
-
-
-
     </main>
   );
 

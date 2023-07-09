@@ -8,15 +8,21 @@
 }
 
 .leftrow-container {
-    height: 100%;
     width: 25%;
 }
 
 .rightrow-container {
-    height: 100%;
     width: 75%;
 }
 
-.minWidthNavBar{
+.minWidthNavBar {
     min-width: 1000px;
+}
+
+.unselected-button {
+    background-color: rgb(243 244 246);
+}
+
+.selected-button {
+    background-color: rgb(59 130 246);
 }
