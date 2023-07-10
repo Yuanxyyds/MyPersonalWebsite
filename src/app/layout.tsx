@@ -1,6 +1,7 @@
 import './globals.css'
-import './css/home.css'
-import './css/skill.css'
+import './helpers/common.css'
+import './summary/summary.css'
+import './skill/skill.css'
 import { Inter } from 'next/font/google'
 import React from "react";
 

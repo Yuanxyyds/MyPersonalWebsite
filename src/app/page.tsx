@@ -1,162 +1,57 @@
 "use client";
-import { AiFillGithub, AiFillLinkedin, } from 'react-icons/ai';
-import { useState } from 'react';
-import SkillContent from './pages/skill';
-import SummaryContent from './pages/summary';
-import Link from 'next/link'
+import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
+import CommonComponent from "./helpers/common-component";
+import Image from 'next/image';
+import { GrLocation } from "react-icons/gr";
 
 
-export default function Home() {
-  const [activeTab, setActiveTab] = useState('summary');
-
-  const handleTabChange = (tab: string) => {
-    setActiveTab(tab);
-  };
-
-  const RenderContent = () => {
-    if (activeTab === 'summary') {
-      return <SummaryContent />;
-    } else if (activeTab === 'skill') {
-      return <SkillContent />;
-    } else {
-      return;
-    }
-  }
-
+export default function SummaryContent() {
   return (
-    <main className='font-poppin background-container'>
-      <section className='bg-black py-5 flex justify-between px-10 minWidthNavBar'>
-        {/* Start of the app bar */}
-        <h1 className='text-xl font-burtons text-white'>Welcome to my personal website!</h1>
-        <ul className='flex items-center'>
-          <li>
-            <a href='https://github.com/Yuanxyyds'>
-              <AiFillGithub className='cursor-pointer text-3xl flex justify-center text-white' />
-            </a>
-          </li>
-          <li>
-            <a href='https://www.linkedin.com/in/hongyuan-steven-liu/'>
-              <AiFillLinkedin className='cursor-pointer text-3xl flex justify-center ml-8 fill-white' />
-            </a>
-          </li>
-          <li>
-            <a className='bg-gray-800 text-white px-4 py-2 rounded-md ml-8' href='#'>
-              Resume
-            </a>
-          </li>
-        </ul>
+    <CommonComponent activeTab="summary">
+    <section>
+      <button className='bg-black text-white px-4 py-2 rounded-b-lg'> Overall Summary</button>
+      <section className='text-center p-10'>
+        <div style={{ display: "flex", justifyContent: "center" }}>
+          <div style={{ borderRadius: '50%', overflow: 'hidden', width: '200px', height: '200px', }}>
+            <Image
+              src="/Steven Liu.jpg"
+              width={500}
+              height={500}
+              alt="Picture of Me"
+            />
+          </div>
+        </div>
 
+        <div className=' bg-gradient-to-tr from-slate-50 to-slate-400 h-auto p-5 mt-10 rounded-md'>
+          <h2 className='text-3xl py-2 text-black font-bold'>Hongyuan (Steven) Liu</h2>
+          <h3 className='text-xl text-gray-500 mb-4'>Softwore/Mobile App Developer & Data Scientist</h3>
+          <div className='flex justify-center my-2'>
+            <ul className='flex'>
+              <li><AiOutlineMail className='text-2xl text-black mr-2' /></li>
+              <li><p>liuhongyuan2001@gmail.com</p></li>
+            </ul>
+          </div>
+
+          <div className='flex justify-center my-2'>
+            <ul className='flex'>
+              <li><GrLocation className='text-2xl text-black mr-2' /></li>
+              <li><p>1000 portage pkwy, Vaughan ON</p></li>
+            </ul>
+          </div>
+
+          <div className='flex justify-center my-2'>
+            <ul className='flex'>
+              <li><AiOutlinePhone className='text-2xl text-black mr-2' /></li>
+              <li><p>647-309-9649</p></li>
+            </ul>
+          </div>
+
+          <p className='text-md mb-2 mt-4 leading-8 text-gray-800'>
+            A passionate third-year undergraduate student at the University of Toronto, double specialist in Computer Science & Data Science with GPA 3.9/4.0. Currently working as a Cloud and Mobile App Co-op developer at Johnson Controls and serving as President of the University of Toronto Tutoring Club. I am actively contributing to a diverse range of 10+ projects, software business startups, over 1000+ contribution on github.
+          </p>
+        </div>
       </section>
-
-      {/* The main container with bg image */}
-      <section className='flex'>
-        {/* First Row */}
-        <section className=" bg-gray-100 leftrow-container py-10 px-5">
-          {/* Learn About Me */}
-          <h1 className=' text-gray-700 mb-4 text-lg'> Learn About Me</h1>
-          <div>
-            <p
-              className={`cursor-pointer mb-2 text-sm ${activeTab === 'summary' ? 'text-gray-800' : 'text-gray-400'
-                }`}
-              onClick={() => handleTabChange('summary')}
-            >Overall Summary
-            </p>
-          </div>
-          <div>
-            <p
-              className={`cursor-pointer mb-2 text-sm ${activeTab === 'skill' ? 'text-gray-800' : 'text-gray-400'
-                }`}
-              onClick={() => handleTabChange('skill')}
-            >Skill Summary
-            </p>
-          </div>
-          <div>
-            <p
-              className={`cursor-pointer mb-2  text-sm ${activeTab === 'experience' ? 'text-gray-800' : 'text-gray-400'
-                }`}
-              onClick={() => handleTabChange('experience')}
-            > Experience
-            </p>
-          </div>
-
-          {/* My Projects */}
-          <h1 className=' text-gray-700 my-4 text-lg'> My Projects</h1>
-          <div>
-            <p
-              className={`cursor-pointer mb-2 text-sm ${activeTab === 'project-campusEats' ? 'text-gray-800' : 'text-gray-400'
-                }`}
-              onClick={() => handleTabChange('project-campusEats')}
-            >CampusEats
-            </p>
-          </div>
-          <div>
-            <p
-              className={`cursor-pointer mb-2 text-sm ${activeTab === 'project-dtc' ? 'text-gray-800' : 'text-gray-400'
-                }`}
-              onClick={() => handleTabChange('project-dtc')}
-            >DTC
-            </p>
-          </div>
-          <div>
-            <p
-              className={`cursor-pointer mb-2  text-sm ${activeTab === 'project-web' ? 'text-gray-800' : 'text-gray-400'
-                }`}
-              onClick={() => handleTabChange('project-web')}
-            > Personal Website
-            </p>
-          </div>
-          <div>
-            <p
-              className={`cursor-pointer mb-2  text-sm ${activeTab === 'project-cs' ? 'text-gray-800' : 'text-gray-400'
-                }`}
-              onClick={() => handleTabChange('project-cs')}
-            > Other CS course projects
-            </p>
-          </div>
-
-          <div>
-            <p
-              className={`cursor-pointer mb-2  text-sm ${activeTab === 'project-lakes' ? 'text-gray-800' : 'text-gray-400'
-                }`}
-              onClick={() => handleTabChange('project-lakes')}
-            > Analyzing Great Lakes Pollution
-            </p>
-          </div>
-
-          <div>
-            <p
-              className={`cursor-pointer mb-2  text-sm ${activeTab === 'project-nlp' ? 'text-gray-800' : 'text-gray-400'
-                }`}
-              onClick={() => handleTabChange('project-nlp')}
-            > Identify Abusive Clash Royale Tweets
-            </p>
-          </div>
-
-          <div>
-            <p
-              className={`cursor-pointer mb-2  text-sm ${activeTab === 'project-nba' ? 'text-gray-800' : 'text-gray-400'
-                }`}
-              onClick={() => handleTabChange('project-nba')}
-            > NBA2K Player Rating Predictions
-            </p>
-          </div>
-
-          <div>
-            <p
-              className={`cursor-pointer mb-2  text-sm ${activeTab === 'project-ds' ? 'text-gray-800' : 'text-gray-400'
-                }`}
-              onClick={() => handleTabChange('project-ds')}
-            > Other DS course projects
-            </p>
-          </div>
-
-        </section>
-        {/* Second Row */}
-        <section className='rightrow-container'>
-          <RenderContent />
-        </section>
-      </section>
-    </main>
+    </section>
+    </CommonComponent>
   );
-
-}
+};
