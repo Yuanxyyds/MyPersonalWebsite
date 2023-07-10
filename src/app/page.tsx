@@ -3,6 +3,7 @@ import { AiFillGithub, AiFillLinkedin, } from 'react-icons/ai';
 import { useState } from 'react';
 import SkillContent from './pages/skill';
 import SummaryContent from './pages/summary';
+import Link from 'next/link'
 
 
 export default function Home() {
@@ -23,9 +24,9 @@ export default function Home() {
   }
 
   return (
-    <main className='font-poppin'>
+    <main className='font-poppin background-container'>
       <section className='bg-black py-5 flex justify-between px-10 minWidthNavBar'>
-        {/* Start of the navigation bar */}
+        {/* Start of the app bar */}
         <h1 className='text-xl font-burtons text-white'>Welcome to my personal website!</h1>
         <ul className='flex items-center'>
           <li>
@@ -48,112 +49,107 @@ export default function Home() {
       </section>
 
       {/* The main container with bg image */}
-      <section className=' background-container flex'>
+      <section className='flex'>
         {/* First Row */}
-        <section className=" bg-white leftrow-container p-10">
+        <section className=" bg-gray-100 leftrow-container py-10 px-5">
           {/* Learn About Me */}
-          <h1 className='text-center mb-4 font-bold font-burtons text-lg'> Learn About Me :)</h1>
-          <div className='flex flex-col rounded-md' style={{ border: '1px solid black' }}>
-
-            <button
-              className={`px-4 py-2 text-sm rounded-t-md  ${activeTab === 'summary' ? 'bg-blue-500' : 'bg-gray-100'
-                }`} style={{ borderBottom: '1px solid black' }}
+          <h1 className=' text-gray-700 mb-4 text-lg'> Learn About Me</h1>
+          <div>
+            <p
+              className={`cursor-pointer mb-2 text-sm ${activeTab === 'summary' ? 'text-gray-800' : 'text-gray-400'
+                }`}
               onClick={() => handleTabChange('summary')}
             >Overall Summary
-            </button>
-
-            <button
-              className={`px-4 py-2 text-sm ${activeTab === 'skill' ? 'bg-blue-500' : 'bg-gray-100'
-                }`} style={{ borderBottom: '1px solid black' }}
+            </p>
+          </div>
+          <div>
+            <p
+              className={`cursor-pointer mb-2 text-sm ${activeTab === 'skill' ? 'text-gray-800' : 'text-gray-400'
+                }`}
               onClick={() => handleTabChange('skill')}
             >Skill Summary
-            </button>
-
-            <button
-              className={`px-4 py-2 text-sm ${activeTab === 'experience' ? 'bg-blue-500' : 'bg-gray-100'
-                }`} style={{ borderBottom: '1px solid black' }}
+            </p>
+          </div>
+          <div>
+            <p
+              className={`cursor-pointer mb-2  text-sm ${activeTab === 'experience' ? 'text-gray-800' : 'text-gray-400'
+                }`}
               onClick={() => handleTabChange('experience')}
-            >Work Experience
-            </button>
-
-            <button
-              className={`px-4 py-2 text-sm rounded-b-md  ${activeTab === 'project' ? 'bg-blue-500' : 'bg-gray-100'
-                }`}
-              onClick={() => handleTabChange('project')}
-            >Project Experience
-            </button>
+            > Experience
+            </p>
           </div>
 
-          {/* Mobile App Development */}
-          <h1 className='text-center mb-4 font-bold font-burtons text-lg mt-10'> Mobile App Series</h1>
-          <div className='flex flex-col rounded-md' style={{ border: '1px solid black' }}>
-
-            <button
-              className={`px-4 py-2 text-sm rounded-t-md  ${activeTab === 'campusEat2' ? 'bg-blue-500' : 'bg-gray-100'
-                }`} style={{ borderBottom: '1px solid black' }}
-              onClick={() => handleTabChange('campusEat2')}
-            >Campus Eats 2.0
-            </button>
-
-            <button
-              className={`px-4 py-2 text-sm ${activeTab === 'campusEat1' ? 'bg-blue-500' : 'bg-gray-100'
-                }`} style={{ borderBottom: '1px solid black' }}
-              onClick={() => handleTabChange('campusEat1')}
-            >Campus Eats 1.0
-            </button>
-
-            <button
-              className={`px-4 py-2 text-sm ${activeTab === 'utft' ? 'bg-blue-500' : 'bg-gray-100'
-                }`} style={{ borderBottom: '1px solid black' }}
-              onClick={() => handleTabChange('utft')}
-            > Group Asoul - UofT Food Truck
-            </button>
-
-            <button
-              className={`px-4 py-2 rounded-b-md  text-sm ${activeTab === 'dtc' ? 'bg-blue-500' : 'bg-gray-100'
+          {/* My Projects */}
+          <h1 className=' text-gray-700 my-4 text-lg'> My Projects</h1>
+          <div>
+            <p
+              className={`cursor-pointer mb-2 text-sm ${activeTab === 'project-campusEats' ? 'text-gray-800' : 'text-gray-400'
                 }`}
-              onClick={() => handleTabChange('dtc')}
-            > DTC
-            </button>
+              onClick={() => handleTabChange('project-campusEats')}
+            >CampusEats
+            </p>
+          </div>
+          <div>
+            <p
+              className={`cursor-pointer mb-2 text-sm ${activeTab === 'project-dtc' ? 'text-gray-800' : 'text-gray-400'
+                }`}
+              onClick={() => handleTabChange('project-dtc')}
+            >DTC
+            </p>
+          </div>
+          <div>
+            <p
+              className={`cursor-pointer mb-2  text-sm ${activeTab === 'project-web' ? 'text-gray-800' : 'text-gray-400'
+                }`}
+              onClick={() => handleTabChange('project-web')}
+            > Personal Website
+            </p>
+          </div>
+          <div>
+            <p
+              className={`cursor-pointer mb-2  text-sm ${activeTab === 'project-cs' ? 'text-gray-800' : 'text-gray-400'
+                }`}
+              onClick={() => handleTabChange('project-cs')}
+            > Other CS course projects
+            </p>
           </div>
 
-          {/* Web Development */}
-          <h1 className='text-center mb-4 font-bold font-burtons text-lg mt-10'> Web Develop Series</h1>
-          <div className='flex flex-col rounded-md' style={{ border: '1px solid black' }}>
-
-            <button
-              className={`px-4 py-2 rounded-md text-sm  ${activeTab === 'personalweb' ? 'bg-blue-500' : 'bg-gray-100'
+          <div>
+            <p
+              className={`cursor-pointer mb-2  text-sm ${activeTab === 'project-lakes' ? 'text-gray-800' : 'text-gray-400'
                 }`}
-              onClick={() => handleTabChange('personalweb')}
-            >Personal Website
-            </button>
-          </div>
-
-
-          {/* Data Science Project */}
-          <h1 className='text-center mb-4 font-bold font-burtons text-lg mt-10'> Data Science Project</h1>
-          <div className='flex flex-col rounded-md' style={{ border: '1px solid black' }}>
-
-            <button
-              className={`px-4 py-2 rounded-t-md text-sm  ${activeTab === 'greatlakes' ? 'bg-blue-500' : 'bg-gray-100'
-                }`} style={{ borderBottom: '1px solid black' }}
-              onClick={() => handleTabChange('greatlakes')}
+              onClick={() => handleTabChange('project-lakes')}
             > Analyzing Great Lakes Pollution
-            </button>
-
-            <button
-              className={`px-4 py-2 text-sm ${activeTab === 'nlp' ? 'bg-blue-500' : 'bg-gray-100'
-                }`} style={{ borderBottom: '1px solid black' }}
-              onClick={() => handleTabChange('nlp')}
-            > NLPS
-            </button>
-            <button
-              className={`px-4 py-2 rounded-b-md text-sm  ${activeTab === 'dsothers' ? 'bg-blue-500' : 'bg-gray-100'
-                }`}
-              onClick={() => handleTabChange('dsothers')}
-            > Other Data Science Projects
-            </button>
+            </p>
           </div>
+
+          <div>
+            <p
+              className={`cursor-pointer mb-2  text-sm ${activeTab === 'project-nlp' ? 'text-gray-800' : 'text-gray-400'
+                }`}
+              onClick={() => handleTabChange('project-nlp')}
+            > Identify Abusive Clash Royale Tweets
+            </p>
+          </div>
+
+          <div>
+            <p
+              className={`cursor-pointer mb-2  text-sm ${activeTab === 'project-nba' ? 'text-gray-800' : 'text-gray-400'
+                }`}
+              onClick={() => handleTabChange('project-nba')}
+            > NBA2K Player Rating Predictions
+            </p>
+          </div>
+
+          <div>
+            <p
+              className={`cursor-pointer mb-2  text-sm ${activeTab === 'project-ds' ? 'text-gray-800' : 'text-gray-400'
+                }`}
+              onClick={() => handleTabChange('project-ds')}
+            > Other DS course projects
+            </p>
+          </div>
+
         </section>
         {/* Second Row */}
         <section className='rightrow-container'>
