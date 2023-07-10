@@ -2,10 +2,13 @@ import React from 'react';
 import Image from 'next/image';
 import { AiOutlineMail, AiOutlinePhone } from 'react-icons/ai';
 import { GrLocation } from 'react-icons/gr';
+import CommonComponent from '@/app/helpers/common-component';
+
 
 
 export default function SummaryContent() {
   return (
+    <CommonComponent activeTab="summary">
     <section>
       <button className='bg-black text-white px-4 py-2 rounded-b-lg'> Overall Summary</button>
       <section className='text-center p-10'>
@@ -50,5 +53,6 @@ export default function SummaryContent() {
         </div>
       </section>
     </section>
+    </CommonComponent>
   );
 };
