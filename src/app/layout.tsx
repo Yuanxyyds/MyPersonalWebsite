@@ -3,6 +3,7 @@ import './helpers/common.css'
 import './summary/summary.css'
 import './skill/skill.css'
 import './experience/experience.css'
+import './project-campusEats/campusEats.css'
 import { Inter } from 'next/font/google'
 import React from "react";
 

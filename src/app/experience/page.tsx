@@ -31,7 +31,7 @@ export default function ExperienceContent() {
                                 <p className=' text-white text-xs ml-3 mr-10 mt-1'> - Familar with Design Pattern and OOP architeture </p>
                                 <p className=' text-white text-xs ml-3 mr-10 mt-1'> - Data Serialization using SQLite </p>
                             </div>
-                            <Link href='#' className='left-link1'> Link</Link>
+                            <Link href='/project-campusEats#uoft-FoodTruck' className='left-link1'> Link</Link>
                         </div>
                         <div className=' experience-container'>
                             <h1 className=' experience-header3 text-center mt-1'>May 2022 - Current</h1>
