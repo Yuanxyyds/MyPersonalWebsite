@@ -1,0 +1,394 @@
+.experience-padding {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 150px;
+    padding-right: 150px;
+
+
+    @media screen and (max-width: 1700px) {
+        /* Adjust padding for screens with a maximum width of 768px */
+        padding-left: 110px;
+        padding-right: 110px;
+    }
+
+    @media screen and (max-width: 1500px) {
+        /* Adjust padding for screens with a maximum width of 768px */
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+
+    @media screen and (max-width: 1400px) {
+        /* Adjust padding for screens with a maximum width of 768px */
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+
+    @media screen and (max-width: 1300px) {
+        /* Adjust padding for screens with a maximum width of 768px */
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    @media screen and (max-width: 1200px) {
+        /* Adjust padding for screens with a maximum width of 768px */
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    @media screen and (max-width: 1100px) {
+        /* Adjust padding for screens with a maximum width of 480px */
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+.experience-placeholder {
+    height: 1500px;
+}
+
+/* This is a Container comment */
+
+.experience-container:nth-child(1) {
+    position: absolute;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    background-color: white;
+    right: 0px;
+    height: 270px;
+    width: 300px;
+    border-radius: 4%;
+}
+
+.experience-container:nth-child(2) {
+    position: absolute;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    background-color: white;
+    top: 100px;
+    height: 270px;
+    width: 300px;
+    border-radius: 4%;
+}
+
+.experience-container:nth-child(3) {
+    position: absolute;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    background-color: white;
+    right: 0px;
+    top: 370px;
+    height: 270px;
+    width: 300px;
+    border-radius: 4%;
+}
+
+.experience-container:nth-child(4) {
+    position: absolute;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    background-color: white;
+    top: 470px;
+    height: 270px;
+    width: 300px;
+    border-radius: 4%;
+}
+
+.experience-container:nth-child(5) {
+    position: absolute;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    background-color: white;
+    top: 740px;
+    right: 0px;
+    height: 270px;
+    width: 300px;
+    border-radius: 4%;
+}
+
+/* Left-experience-content */
+
+.left-experience-content1 {
+    position: absolute;
+    top: 35px;
+    background-color: rgb(104, 165, 185);
+    height: 200px;
+    width: 275px;
+    left: -10px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.left-experience-content2 {
+    position: absolute;
+    top: 35px;
+    background-color: brown;
+    height: 200px;
+    width: 275px;
+    left: -10px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+/* Right-experience-content */
+
+.right-experience-content1 {
+    position: absolute;
+    top: 35px;
+    background-color: purple;
+    height: 200px;
+    width: 275px;
+    right: -10px;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+.right-experience-content2 {
+    position: absolute;
+    top: 35px;
+    background-color: darkgreen;
+    height: 200px;
+    width: 275px;
+    right: -10px;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+.right-experience-content3 {
+    position: absolute;
+    top: 35px;
+    background-color: darkgoldenrod;
+    height: 200px;
+    width: 275px;
+    right: -10px;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+/* This is a horizontal Line comment */
+
+.horizontal-line:nth-child(1) {
+    position: absolute;
+    background-color: purple;
+    top: 132px;
+    right: 300px;
+    left: 50%;
+    height: 6px;
+}
+
+.horizontal-line:nth-child(2) {
+    position: absolute;
+    background-color: rgb(104, 165, 185);
+    top: 232px;
+    left: 300px;
+    right: calc(50% + 6px);
+    height: 6px;
+}
+
+.horizontal-line:nth-child(3) {
+    position: absolute;
+    background-color: darkgreen;
+    top: 502px;
+    right: 300px;
+    left: 50%;
+    height: 6px;
+}
+
+.horizontal-line:nth-child(4) {
+    position: absolute;
+    background-color: brown;
+    top: 602px;
+    left: 300px;
+    right: 50%;
+    height: 6px;
+}
+
+.horizontal-line:nth-child(5) {
+    position: absolute;
+    background-color: darkgoldenrod;
+    top: 872px;
+    right: 300px;
+    left: 50%;
+    height: 6px;
+}
+
+
+
+/* This is a Center Line comment */
+
+.center-line:nth-child(1) {
+    position: absolute;
+    background-color: purple;
+    left: 50%;
+    width: 6px;
+    height: 100px;
+    top: 132px;
+}
+
+.center-line:nth-child(2) {
+    position: absolute;
+    background-color: rgb(104, 165, 185);
+    left: 50%;
+    width: 6px;
+    height: 277px;
+    top: 225px;
+}
+
+.center-line:nth-child(3) {
+    position: absolute;
+    background-color: brown;
+    left: 50%;
+    width: 6px;
+    height: 100px;
+    top: 495px;
+}
+
+.center-line:nth-child(4) {
+    position: absolute;
+    background-color: darkgoldenrod;
+    left: 50%;
+    width: 6px;
+    height: 277px;
+    top: 595px;
+}
+
+/* This is a Ball comment */
+
+.ball:nth-child(1) {
+    position: absolute;
+    background-color: purple;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    top: 125px;
+    right: 298px;
+}
+
+.ball:nth-child(2) {
+    position: absolute;
+    background-color: purple;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    top: 125px;
+    left: calc(50% - 7px);
+}
+
+.ball:nth-child(3) {
+    position: absolute;
+    background-color: rgb(104, 165, 185);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    top: 225px;
+    left: 298px;
+}
+
+.ball:nth-child(4) {
+    position: absolute;
+    background-color: rgb(104, 165, 185);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    top: 225px;
+    left: calc(50% - 7px);
+}
+
+.ball:nth-child(5) {
+    position: absolute;
+    background-color: darkgreen;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    top: 495px;
+    right: 298px;
+}
+
+.ball:nth-child(6) {
+    position: absolute;
+    background-color: darkgreen;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    top: 495px;
+    left: calc(50% - 7px);
+}
+
+.ball:nth-child(7) {
+    position: absolute;
+    background-color: brown;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    top: 595px;
+    left: 298px;
+}
+
+.ball:nth-child(8) {
+    position: absolute;
+    background-color: brown;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    top: 595px;
+    left: calc(50% - 7px);
+}
+
+.ball:nth-child(9) {
+    position: absolute;
+    background-color: darkgoldenrod;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    top: 865px;
+    right: 298px;
+}
+
+.ball:nth-child(10) {
+    position: absolute;
+    background-color: darkgoldenrod;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    top: 865px;
+    left: calc(50% - 7px);
+}
+
+
+
+/* Text Style */
+.experience-header1 {
+    color: purple;
+    font-size: larger;
+    font-weight: 400;
+}
+
+.experience-header2 {
+    color: rgb(104, 165, 185);
+    font-size: larger;
+    font-weight: 400;
+}
+
+.experience-header3 {
+    color: darkgreen;
+    font-size: larger;
+    font-weight: 400;
+}
+
+.experience-header4 {
+    color: brown;
+    font-size: larger;
+    font-weight: 400;
+}
+
+.experience-header5 {
+    color: darkgoldenrod;
+    font-size: larger;
+    font-weight: 400;
+}
+
+
+.experience-header {
+    color: white;
+    font-weight: 400;
+}
+
+.experience-subheader {
+    color: white;
+    font-size: small;
+    font-weight: 300;
+}

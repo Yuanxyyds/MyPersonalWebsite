@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27937b17-aa2b-4617-a657-e63859cb0a32" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/app/helpers/common-component.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/skill.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/summary.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/helpers/common-component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/helpers/common-component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/helpers/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/helpers/common.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +81,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="feat/navigation_bar" />
                       </list>
                     </value>
                   </entry>
