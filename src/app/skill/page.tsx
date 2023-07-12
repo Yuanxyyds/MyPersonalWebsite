@@ -11,7 +11,15 @@ export default function SkillContent() {
 
     const handleTabChange = (tab: string) => {
         setActiveTab(tab);
+        window.location.hash = tab;
     };
+
+    React.useEffect(() => {
+        const hash = window.location.hash.replace('#', '');
+        if (hash) {
+            setActiveTab(hash);
+        }
+    }, []);
 
     if (activeTab === 'cs') {
         {/* Start of the CS Skill */ }

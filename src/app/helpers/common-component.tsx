@@ -69,13 +69,13 @@ export default function CommonComponent({ activeTab, children }: CommonComponent
 
           {/* My Projects */}
           <h1 className=' text-gray-700 my-4 text-lg font-medium'> My CS Projects - with Video Explaination</h1>
-          <div>
+          <Link href="/project-campusEats">
             <p
               className={`cursor-pointer mb-2 text-sm ${activeTab === 'project-campusEats' ? 'text-gray-800' : 'text-gray-400'
                 }`}
             >CampusEats \uD83D\uDC4D
             </p>
-          </div>
+          </Link>
           <div>
             <p
               className={`cursor-pointer mb-2 text-sm ${activeTab === 'project-dtc' ? 'text-gray-800' : 'text-gray-400'
