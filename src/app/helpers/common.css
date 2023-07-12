@@ -6,11 +6,13 @@
 }
 
 .leftrow-container {
+    position: relative;
     width: 20%;
     min-height: 100vh;
 }
 
 .rightrow-container {
+    position: relative;
     width: 80%;
     min-height: 100vh;
 }

@@ -58,11 +58,13 @@ export default function CommonComponent({ activeTab, children }: CommonComponent
             </Link>
           </div>
           <div>
-            <p
-              className={`cursor-pointer mb-2  text-sm ${activeTab === 'experience' ? 'text-gray-800' : 'text-gray-400'
-                }`}
-            > Experience
-            </p>
+            <Link href="/experience">
+              <p
+                className={`cursor-pointer mb-2  text-sm ${activeTab === 'experience' ? 'text-gray-800' : 'text-gray-400'
+                  }`}>
+                {activeTab === 'experience' ? '> Experirence' : 'Experience'}
+              </p>
+            </Link>
           </div>
 
           {/* My Projects */}
@@ -71,21 +73,21 @@ export default function CommonComponent({ activeTab, children }: CommonComponent
             <p
               className={`cursor-pointer mb-2 text-sm ${activeTab === 'project-campusEats' ? 'text-gray-800' : 'text-gray-400'
                 }`}
-            >CampusEats \uD83D\uDC4D 
+            >CampusEats \uD83D\uDC4D
             </p>
           </div>
           <div>
             <p
               className={`cursor-pointer mb-2 text-sm ${activeTab === 'project-dtc' ? 'text-gray-800' : 'text-gray-400'
                 }`}
-            >DTC \uD83D\uDC4D 
+            >DTC \uD83D\uDC4D
             </p>
           </div>
           <div>
             <p
               className={`cursor-pointer mb-2  text-sm ${activeTab === 'project-web' ? 'text-gray-800' : 'text-gray-400'
                 }`}
-            > Personal Website \uD83D\uDC4D 
+            > Personal Website \uD83D\uDC4D
             </p>
           </div>
           <div>
@@ -101,7 +103,7 @@ export default function CommonComponent({ activeTab, children }: CommonComponent
             <p
               className={`cursor-pointer mb-2  text-sm ${activeTab === 'project-lakes' ? 'text-gray-800' : 'text-gray-400'
                 }`}
-            > Analyzing Great Lakes Pollution \uD83D\uDC4D 
+            > Analyzing Great Lakes Pollution \uD83D\uDC4D
             </p>
           </div>
 
