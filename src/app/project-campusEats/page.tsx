@@ -59,7 +59,7 @@ export default function CampusEatsContent() {
                     <p className='text-gray-600 mt-4'>
                         We have developed a FoodTruck ordering program with two main components: the backend and the frontend. The backend handles user registration, login system, rating system, market sorting, serialization, and various functionalities like managing food trucks and orders. Users can act as both buyers and sellers, and they can edit their food trucks.</p>
                     <p className='text-gray-600 mt-4'>
-                        For the frontend, we have implemented a fully-functional command-line interface that can be accessed in Intellij. It includes a "help" function to display available commands. Additionally, we have partially implemented an Android app, which can perform most of the command-line functions except dynamically viewing the market, order history, and placing orders.</p>
+                        For the frontend, we have implemented a fully-functional command-line interface that can be accessed in Intellij. It includes a help function to display available commands. Additionally, we have partially implemented an Android app, which can perform most of the command-line functions except dynamically viewing the market, order history, and placing orders.</p>
                     <h2 className=' text-xl my-4'> Command-line Interface Demo</h2>
                     <ReactPlayer url='https://www.youtube.com/watch?v=J3kfU4Ic8Uc' />
                     <h2 className=' text-xl my-4'> Android Interface Demo</h2>
