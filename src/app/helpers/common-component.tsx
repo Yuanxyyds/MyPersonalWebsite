@@ -73,28 +73,28 @@ export default function CommonComponent({ activeTab, children }: CommonComponent
             <p
               className={`cursor-pointer mb-2 text-sm ${activeTab === 'project-campusEats' ? 'text-gray-800' : 'text-gray-400'
                 }`}
-            >CampusEats \uD83D\uDC4D
+            > {activeTab === 'experience' ? '> CampusEats \uD83D\uDC4D' : 'CampusEats \uD83D\uDC4D'}
             </p>
           </Link>
           <div>
             <p
               className={`cursor-pointer mb-2 text-sm ${activeTab === 'project-dtc' ? 'text-gray-800' : 'text-gray-400'
                 }`}
-            >DTC \uD83D\uDC4D
+            >DTC \uD83D\uDC4D (TBD)
             </p>
           </div>
           <div>
             <p
               className={`cursor-pointer mb-2  text-sm ${activeTab === 'project-web' ? 'text-gray-800' : 'text-gray-400'
                 }`}
-            > Personal Website \uD83D\uDC4D
+            > Personal Website \uD83D\uDC4D (TBD)
             </p>
           </div>
           <div>
             <p
               className={`cursor-pointer mb-2  text-sm ${activeTab === 'project-cs' ? 'text-gray-800' : 'text-gray-400'
                 }`}
-            > Other CS course projects
+            > Other CS course projects (TBD)
             </p>
           </div>
 
@@ -103,7 +103,7 @@ export default function CommonComponent({ activeTab, children }: CommonComponent
             <p
               className={`cursor-pointer mb-2  text-sm ${activeTab === 'project-lakes' ? 'text-gray-800' : 'text-gray-400'
                 }`}
-            > Analyzing Great Lakes Pollution \uD83D\uDC4D
+            > Analyzing Great Lakes Pollution \uD83D\uDC4D (TBD)
             </p>
           </div>
 
@@ -111,7 +111,7 @@ export default function CommonComponent({ activeTab, children }: CommonComponent
             <p
               className={`cursor-pointer mb-2  text-sm ${activeTab === 'project-nlp' ? 'text-gray-800' : 'text-gray-400'
                 }`}
-            > Identify Abusive Clash Royale Tweets
+            > Identify Abusive Clash Royale Tweets (TBD)
             </p>
           </div>
 
@@ -119,14 +119,14 @@ export default function CommonComponent({ activeTab, children }: CommonComponent
             <p
               className={`cursor-pointer mb-2  text-sm ${activeTab === 'project-nba' ? 'text-gray-800' : 'text-gray-400'
                 }`}
-            > NBA2K Player Rating Predictions
+            > NBA2K Player Rating Predictions (TBD)
             </p>
           </div>
 
           <div>
             <p
               className={`cursor-pointer mb-2  text-sm ${activeTab === 'project-ds' ? 'text-gray-800' : 'text-gray-400'
-                }`}> Other DS course projects
+                }`}> Other DS course projects (TBD)
             </p>
           </div>
 
