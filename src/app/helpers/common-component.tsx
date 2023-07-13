@@ -73,7 +73,7 @@ export default function CommonComponent({ activeTab, children }: CommonComponent
             <p
               className={`cursor-pointer mb-2 text-sm ${activeTab === 'project-campusEats' ? 'text-gray-800' : 'text-gray-400'
                 }`}
-            > {activeTab === 'experience' ? '> CampusEats \uD83D\uDC4D' : 'CampusEats \uD83D\uDC4D'}
+            > {activeTab === 'project-campusEats' ? '> CampusEats \uD83D\uDC4D' : 'CampusEats \uD83D\uDC4D'}
             </p>
           </Link>
           <div>
