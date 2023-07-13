@@ -31,6 +31,17 @@ export default function CampusEatsContent() {
                     <button className='ml-4 text-gray-600' onClick={() => handleTabChange('campusEats1')}> Campus Eats Version 1.0</button>
                     <button className='ml-4 text-gray-600' onClick={() => handleTabChange('uoft-FoodTruck')}> UofT Food Truck Project</button>
                 </nav>
+                <section className=' center-section px-40 py-20'>
+                    <h1 className=' text-3xl'> Campus Eats - Version 2.0 </h1>
+                    <p className='text-gray-600 mt-8'>
+                        <strong> Updated July 13 2023: This project is under development.</strong>
+                    </p>
+                    <p className='text-gray-600 mt-4'>
+                        Unfortunately, this repostory is currently set to private under development. However, below is a project demo based on the <strong> current state of the project</strong>. Feel free also to checkout <a onClick={() => handleTabChange('campusEats1')} className=' text-blue-500 cursor-pointer'>Version 1.0</a> and <a onClick={() => handleTabChange('project-campusEats')} className=' text-blue-500 cursor-pointer'>UofT Food Truck Project</a>.
+                    </p>
+                    <h2 className=' text-xl my-4'> Current State Demo </h2>
+                    <ReactPlayer url='https://www.youtube.com/watch?v=7Bg82R61Dfk' />
+                </section>
             </CommonComponent>
         );
 

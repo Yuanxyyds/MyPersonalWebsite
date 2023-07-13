@@ -19,7 +19,7 @@ export default function ExperienceContent() {
                                 <p className=' text-white text-xs mr-3 ml-10 text-right mt-2'> - Teaching the ideas of solving tough math/computer science/physics questions to high school students. </p>
                                 <p className=' text-white text-xs mr-3 ml-10 text-right mt-1'> - Assisting students in finding useful study methods to enhance academic performance. </p>
                             </div>
-                            <Link href='#' className='right-link1'> Link</Link>
+                            {/*<Link href='#' className='right-link1'> Link</Link>*/}
                         </div>
                         <div className=' experience-container'>
                             <h1 className=' experience-header2 text-center mt-1'>Sep 2020 - Jan 2021</h1>
@@ -42,7 +42,7 @@ export default function ExperienceContent() {
                                 <p className=' text-white text-xs mr-3 ml-10 text-right mt-1'> - Organizing weekly activities, managing members & departments, and making plans about club development. </p>
                                 <p className=' text-white text-xs mr-3 ml-10 text-right mt-1'> - Early startup business planning, business model testing, UX survey. </p>
                             </div>
-                            <Link href='#' className='right-link2'> Link</Link>
+                            {/* <Link href='#' className='right-link2'> Link</Link> */}
                         </div>
                         <div className=' experience-container'>
                             <h1 className=' experience-header4 text-center mt-1'>Jun 2022 - Current</h1>
@@ -53,7 +53,7 @@ export default function ExperienceContent() {
                                 <p className=' text-white text-xs ml-3 mr-10 mt-1'> - Version 2: Rebuild website using ReactJS (NextJS) and Tailwind CSS </p>
                                 <p className=' text-white text-xs ml-3 mr-10 mt-1'> - Write functional JavaScript and Djongo API</p>
                             </div>
-                            <Link href='#' className='left-link2'> Link</Link>
+                            {/* <Link href='#' className='left-link2'> Link</Link> */}
                         </div>
                         <div className=' experience-container'>
                             <h1 className=' experience-header5 text-center mt-1'>Feb 2023 - May 2023</h1>
@@ -65,7 +65,7 @@ export default function ExperienceContent() {
                                 <p className=' text-white text-xs mr-3 ml-10 text-right mt-1'> - Build Prediction Model and Interactive visual plots </p>
                                 <p className=' text-white text-xs mr-3 ml-10 text-right mt-1'> - Build Rmarkdown website for project report</p>
                             </div>
-                            <Link href='#' className='right-link3'> Link</Link>
+                            {/* <Link href='#' className='right-link3'> Link</Link> */}
                         </div>
                         <div className=' experience-container'>
                             <h1 className=' experience-header6 text-center mt-1'>May 2023 - Current</h1>
@@ -77,7 +77,7 @@ export default function ExperienceContent() {
                                 <p className=' text-white text-xs ml-3 mr-10 mt-1'> - Participate in Figma UI design</p>
                                 <p className=' text-white text-xs ml-3 mr-10 mt-1'> - Project Lead, teach and assign weekly tasks to team members</p>
                             </div>
-                            <Link href='#' className='left-link3'> Link</Link>
+                            <Link href='/project-campusEats' className='left-link3'> Link</Link>
                         </div>
                         <div className=' experience-container'>
                             <h1 className=' experience-header7 text-center mt-1'>May 2023 - May 2024</h1>
@@ -89,7 +89,7 @@ export default function ExperienceContent() {
                                 <p className=' text-white text-xs mr-3 ml-10 text-right mt-1'> - Experienced using Google Cloud Console</p>
                                 <p className=' text-white text-xs mr-3 ml-10 text-right mt-1'> - Good understanding in gradle/Xcode building</p>
                             </div>
-                            <Link href='#' className='right-link4'> Link</Link>
+                            {/* <Link href='#' className='right-link4'> Link</Link> */}
                         </div>
 
                     </section>
